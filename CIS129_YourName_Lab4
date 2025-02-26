@@ -1,0 +1,34 @@
+# declare local variables
+monthlySales = float(input("monthly sales"))
+ 
+salesIncrease = float(input("sales increase"))
+salesIncrease = salesIncrease / 100
+
+
+# This function determines the storeAmount bonus
+if monthlySales >= 110000:
+    storeAmount = 6000
+elif monthlySales >= 100000 and monthlySales < 110000:
+    storeAmount = 5000
+elif monthlySales >= 90000 and monthlySales <100000:
+    storeAmount = 4000
+elif monthlySales >= 80000 and monthlySales <90000:
+    storeAmount = 3000
+else:
+    storeAmount = 0
+    
+# This function determines the empAmount bonus
+if salesIncrease >= .05:
+    empAmount = 75
+elif salesIncrease >= 0.04:
+    empAmount = 50
+elif salesIncrease >= 0.03:
+    empAmount = 40 
+else:
+    empAmount = 0
+        
+# This function prints the bonus information
+print("The store bonus amount is $", storeAmount )
+print("The employee bonus amount is $", empAmount )
+if (storeAmount == 6000 ) and (empAmount == 75):
+    print("Congrats! You have reached the highest bonus amounts possible!")
