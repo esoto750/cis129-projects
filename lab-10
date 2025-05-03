@@ -1,0 +1,32 @@
+"""
+9.3
+"""
+with open('grades.csv', 'w') as grades:
+    while grades != 'done':
+        first = input('enter first name')
+        if first == 'done':
+            grades = 'done'
+        second = input('enter second name')
+        exam_1 = input('enter exam 1 score')
+        exam_2 = input('enter exam 2 score')
+        exam_3 = input('enter exam 3 score')
+        grades.write(first, second, exam_1, exam_2, exam_3 + '\n')
+
+
+9.2
+with open('grades.txt', 'r') as grades:
+    for i in grades:
+        print(grades[i])
+
+9.1
+with open('grades.txt', 'w') as grades:
+    while grades != 'done':
+        grade = input('enter grades enter done to finish')
+        if grade == 'done':
+            grades = 'done'
+        else:
+            grade_s = float(grade)
+            grades.write(str(grade_s)+ '\n')
+    
+
+        
