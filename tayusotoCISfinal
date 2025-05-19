@@ -1,0 +1,29 @@
+Pseudocode 
+
+Def readtweet(): 
+
+# reads the tweet refers to the determlang function per word 
+
+ 
+
+Def determlang(): 
+
+# has an imported library of opinionated words checks for opinonated words 
+
+ 
+
+Def factcheck(): 
+
+# Checks the tweet by referencing a database of reputable news articles and other facts to determine whether it is factual or not 
+
+ 
+
+Def highlight(): 
+
+# highlights information based on fact, opinion or unconfirmed 
+
+ 
+
+Def present(): 
+
+#presents the tweet with all the highlights and fact check references 
